@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo</title>
+    <link rel="stylesheet" href="modulo.css">
+    <link rel="stylesheet" href="Iconos/fonts/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+    <body id="body" class="fondo_menu">
+
+        <header class="header">
+            <div class="icono_menu">
+                <i class="icon-menu" id="icono_menu"></span></i>
+            </div>
+        </header>
+    
+        <div class="menu" id="menu">
+    
+         <!--  <div class="nombre_pagina" id="nombre_pagina">
+                <h4>Nombre pagina</h4>
+            </div>   -->
+    
+            <!-- icono de mensajeria -->
+            <div class="opc_menu">
+                
+                 <a href="modulomensajeria.html">
+                     <div class="opcion">
+                        <i class="icon-bubbles2" title="Mensajeria">
+                            <h4>Mensajeria</h4>
+                        </i>
+                     </div>
+                 </a>
+    
+                 <a href="modulocorreoelec.html">
+                    <div class="opcion">
+                       <i class="icon-mail3" title="correo electrinico">
+                           <h4>Correo electronico</h4>
+                       </i>
+                    </div>
+                </a>
+    
+                <a href="moduloconferencia.html">
+                    <div class="opcion">
+                       <i class="icon-video-camera" title="Video llamadas">
+                           <h4>video llamada</h4>
+                       </i>
+                    </div>
+                </a>
+    
+                <a href="modulocalendario.html">
+                    <div class="opcion">
+                       <i class="icon-calendar" title="Calendario">
+                           <h4>Calendario</h4>
+                       </i>
+                    </div>
+                </a>
+                 
+            </div>
+          
+        </div>
+    
+        <main class="main_correo">
+            
+            
+                <section class="formulario_correo">
+                        <section class="informacion_correo">
+
+                            <section class="titulo_correo">
+                                <span class="icon-user-tie"></span>
+                                <h2>INFORMACION <br>DE CORREO</h2>
+                            </section>
+
+                            <section class="correo_telefono">
+                                <p><i class="fa-solid fa-envelope fa-lg"></i>&nbsp;&nbsp; info.correo@gmail.com</P>
+                                <p><i class="fa-solid fa-phone fa-lg"></i>&nbsp;&nbsp; +57(310) 815-6655</p>
+                            </section>
+
+                        </section>
+
+                        <form action="enviar.php" method="post" class="formato_correo">
+                            <h2>Envia un Correo Electronico</h2>
+                            <div class="informacion_de_correo">
+
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="nombre">
+
+                                <label for="email">Correo Electronico</label>
+                                <input type="text" id="email" name="correo">
+
+                                <label for="mensaje" class="label1">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje"></textarea>
+
+                                <input type="submit" value="Enviar Mensaje" id="btnsend">
+
+                            </div>
+                        </form>
+                </section>
+           
+        </body>
+        </main>
+              
+        
+        <script src="movimiento.js"></script>     
+
+</body>
+</html>

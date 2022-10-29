@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina uno</title>
+    <link rel="stylesheet" href="Iconos/fonts/style.css" />
+    <link rel="stylesheet" href="diseño.css">
+  </head>
+  <body >
+    <form class="Formulario" name="registar" action="mailto:destino@servidor.com?subject=prueba" method="post" enctype="text/plain">
+      <h1 class="h1">Registrate</h1>
+
+      <div class="Contenedor">
+
+        <div class="Contenedor-input">
+        <i class="icon-user icon"></i>
+        <input type="text" placeholder="Nombre de Usuario" />
+        </div>
+
+        <div class="Contenedor-input">
+        <i class="icon-mail4 icon"></i>
+        <input type="text" placeholder="Correo Electronico" />
+        </div>
+
+        <div class="Contenedor-input">
+          <i class="icon-key icon"></i>
+          <input type="password" placeholder="Contraseña" />
+          </div>
+
+        <div class="Contenedor-input">
+          <i class="icon-key icon"></i>
+          <input type="password" placeholder="Confirmar Contraseña" />
+
+        </div>
+        <input class="buttom" type="submit" formaction="" value="Registrarse" > <br>
+        <p>Aceptas nuestras politicas y condicciones de privacidad<input class="politica" type="checkbox" name="datos" value="off"></p>
+        <p>¿Ya tienes cuenta?<a class="link" href="index.html"> Inicia Sesion</a></p>
+      </div>
+    </form>
+  </body>
+</html>

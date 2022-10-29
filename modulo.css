@@ -1,0 +1,626 @@
+:focus{
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main1  table, th, td{
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+.main1 th, td{
+    padding: 10px;
+}
+
+.fondo_menu{
+    margin-left: 80px;
+    margin-top: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.main{
+    padding: 20px;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: #fbfbfb;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.icono_menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icono_menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu{
+    width: 80px;
+    height: 100%;
+    background: #2c255c;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #2c255c ;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* con esto ocultamos la barra para no dañar el sistema en los diferentes navegadores*/
+.menu::-webkit-scrollbar{
+    display: none;
+}
+.menu{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.nombre_pagina{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nombre_pagina i{
+    width: 20px;
+    margin-right: 20px;
+    
+
+}
+
+.opc_menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.opc_menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.opc_menu a:hover{
+    color: white;
+}
+
+.opc_menu .opcion{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+
+.opc_menu .opcion i {
+    width: 20px ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.opc_menu .opcion h4{
+    font-weight: 300;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+
+a.selecionar{
+   color: white;
+}
+
+
+.body_movimiento{
+    margin-left: 250px;
+}
+
+.menu_movimiento{
+    width: 250px;
+}
+
+@media screen and (max-width: 750px ){
+    .body_movimiento{
+        margin-left: 0px;
+    }
+    .menu_movimiento{
+        width: 80px;
+        left: -80px;
+    }
+    
+}
+
+
+
+
+
+.main_calendario{
+    background: #817e99;
+}
+.diasdelmes{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    padding: 15px;
+}
+.año{
+    padding: 5px;
+    text-align: center;
+}
+
+.meses{
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+
+.primer_dia_enero{
+    grid-column-start: 6;
+}
+.primer_dia_febrero{
+    grid-column-start: 2;
+}
+.primer_dia_marzo{
+    grid-column-start: 2;
+}
+.primer_dia_abril{
+    grid-column-start: 5;
+}
+.primer_dia_mayo{
+    grid-column-start: 7;
+}
+.primer_dia_junio{
+    grid-column-start: 3;
+}
+.primer_dia_julio{
+    grid-column-start: 5;
+}
+.primer_dia_agosto{
+    grid-column-start: 1;
+}
+.primer_dia_septiembre{
+    grid-column-start: 4;
+}
+.primer_dia_octubre{
+    grid-column-start: 6;
+}
+.primer_dia_noviembre{
+    grid-column-start: 2;
+}
+.primer_dia_diciembre{
+    grid-column-start: 4;
+}
+
+.semana{
+    background: #eee;
+    font-weight: bold;
+    padding: 2px;
+}
+.border_calendario{
+    border: #b9b6ca solid 5px;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.main_conferencia{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.color_fondo{
+    width: 100%;
+    height: 87vh;
+    background: #817e99;
+    position: relative;
+}
+.iconos_de_conferencia{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #182842;
+    width: 100px;
+    padding: 10px, 0;
+}
+
+
+.iconos_de_conferencia ul{
+    margin-top: 100px;
+}
+.iconos_de_conferencia ul li{
+    list-style: none;
+}
+.iconos_de_conferencia ul li img{
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5s;
+    border-radius: 10px;
+    transition: opacity 0.5s, background 0.5s;
+}
+.iconos_de_conferencia ul li img:hover{
+    opacity: 1;
+    background: #4d6181;
+}
+.seleccionado{
+    opacity: 1;
+    background: #4d6181;
+}
+.icono_busqueda_munu{
+    margin-left: 120px;
+    padding-right: 15px;
+}
+.busqueda_menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+.busqueda_menu img{
+    width: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.columna1{
+    flex-basis: 70%;
+    align-items: center;
+    align-self: center;
+}
+
+.host_img{
+    width: 50%;
+    border-radius: 15px;
+}
+.host_img2{
+    float: right;
+    width: 50%;
+    padding-left: 7px;
+    border-radius: 15px;
+}
+.controles_llamada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controles_llamada img{
+    width: 60px;
+    margin: 20px 20px;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.5s;
+    transition: opacity 0.5s, background 0.5s;
+}
+.controles_llamada img:hover{
+    opacity: 1;
+    background: #939eae;
+}
+
+
+/* configuracion de correo electronico */
+
+
+.main_correo{
+    background-color: #d0d0d0;
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+
+.formulario_correo{
+    background-color: white;
+    font-family: 'Open sans';
+    display: flex;
+    box-sizing: border-box;
+    margin: 4% auto;
+    
+    
+    
+    width: 85%;
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.informacion_correo::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #7c70c8;
+    opacity: 0.9;
+}
+
+
+.informacion_correo{
+    width: 35%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(imagenes12/correo\ electronico.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+form.formato_correo{
+    width: 69%;
+}
+
+.titulo_correo,
+.correo_telefono{
+    position: relative;
+    z-index: 2;
+    color: #fff; 
+}
+.titulo_correo{
+    margin-bottom: 60px;
+}
+.titulo_correo span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.titulo_correo h2{
+    font-size: 35px;
+    text-align: center;
+}
+.correo_telefono p{
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    
+}
+.correo_telefono p{
+    margin-left: 10px;
+}
+form.formato_correo{
+    width: 55%;
+    padding: 20px 10px;
+    margin-left: 50px;
+}
+form.formato_correo h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px
+}
+form.formato_correo .informacion_de_correo{
+    display: flex;
+    flex-direction: column;
+}
+form.formato_correo label{
+    padding: 7px;
+    font-weight: 600;
+}
+form.formato_correo input,
+form.formato_correo textarea{
+    width: 100%;
+    padding: 8px 15px 5px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+    border-radius: 10px;
+
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 400;
+}
+form.formato_correo textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 80px;
+    /* min-height: 70px; */
+}
+
+form.formato_correo input[type="submit"]{
+    width: 180px;
+    background: #7c70c8;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    align-self: flex-end;
+
+    color: white;
+    font-family: 'Open sans';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+form.formato_correo input[type="submit"]:hover{
+    background: #182842;
+}
+
+/* modulo de mensajeria */
+
+.main_mensajeria{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.mensajeria{
+    width: 500px;
+    margin: auto;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 87vh;
+    background: #e3e2e0;
+}
+.chat-hedear{
+    display: flex;
+    cursor: pointer;
+}
+.perfil{
+    width: 100%;
+    background: #7c70c8;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 1px 10px;
+    position: relative;
+}
+.perfil .foto_de_perfil{
+    width: 60px;
+    height: 60px;
+    border-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top: 2px;
+}
+.perfil .arrow{
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    color: white;
+}
+.perfil h2{
+    display: inline-block;
+    line-height: 70px;
+    vertical-align: bottom;
+    color: white;
+    font-size: 20px;
+}
+.perfil span{
+    color: #ccc;
+    position: absolute;
+    top: 55px;
+    left: 110px;
+    font-size: 14px;
+}
+.right .icon{
+    display: inline-block;
+    width: 35px;
+    margin-left: 10px;
+}
+.perfil .left{
+    flex: 1;
+}
+.chat_box{
+    /* background: url('imagenes12/images/chat3.png');
+    background-repeat: no-repeat; */
+    background-attachment: fixed;
+	padding-left: 20px;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+
+.chat_footer{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.chat_footer textarea{
+    display: block;
+    
+    flex: 1;
+    width: 100%;
+    height: 37px;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 15pt;
+    padding-left: 45px;
+    padding-right: 90px;
+    border: 2px solid #ccc;
+    color: #555;
+    resize: none;
+}
+
+.chat_footer textarea::-webkit-scrollbar{
+    display: none;
+}
+.chat_footer .micro{
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: -70px;
+
+    
+}
+.chat_footer .emo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.chat_footer .file_camara{
+    position: relative;
+    right: 100px;
+    top: 3px;
+}
+.chat_footer .file_camara img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
